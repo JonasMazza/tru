@@ -19,7 +19,7 @@ int main()
     Pwm pwms;
     Leds leds;
     Buttons buttons;
-    Trimpot trimpot0(0, 51200, 102400);     //kp
+    Trimpot trimpot0(0, 51200, 102400);     //trimpot kp
     Trimpot trimpot1(1, 1500000, 1800000);  //velocidade maxima
     Trimpot trimpot2(2, 1500000, 1800000);  //velocidade minima
 
