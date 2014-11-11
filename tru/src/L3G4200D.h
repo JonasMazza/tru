@@ -175,6 +175,7 @@ THE SOFTWARE.
 
 class L3G4200D {
 public:
+	//
 	L3G4200D();
 	L3G4200D(uint8_t address);
 	void initialize();

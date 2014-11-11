@@ -14,6 +14,7 @@ using namespace std;
  */
 I2Cdev::I2Cdev(uint8_t devAddr)
 {
+	//
     char buf[MAX_BUF];
 
     snprintf(buf, sizeof(buf), SYSFS_I2C_DIR);

@@ -16,6 +16,7 @@
 
 class I2Cdev {
     public:
+		//
         I2Cdev(uint8_t devAddr);
 
         int8_t readBit(uint8_t regAddr, uint8_t bitNum, uint8_t *data);
