@@ -15,13 +15,13 @@ int main()
     Mat src;
     Capturador imagem(N_COLUNAS, N_LINHAS);
     Reconhecedor reconhecimento(N_COLUNAS, N_LINHAS, 5, 30, 50, 1);
-    Controlador controle(N_COLUNAS, N_LINHAS, kp, 51200, 0, v_min, v_max);
+    Controlador controle(N_COLUNAS, N_LINHAS, kp, 102400, 0, v_min, v_max);
     Pwm pwms;
     Leds leds;
     Buttons buttons;
-    Trimpot trimpot0(0, 0, 51200);
-    Trimpot trimpot1(1, 1500000, 1800000);
-    Trimpot trimpot2(2, 1500000, 1800000);
+    Trimpot trimpot0(0, 51200, 102400);     //kp
+    Trimpot trimpot1(1, 1500000, 1800000);  //velocidade maxima
+    Trimpot trimpot2(2, 1500000, 1800000);  //velocidade minima
 
 
 	#ifdef TRATAMENTO_RAMPA
@@ -207,7 +207,7 @@ int main()
 }
 
 
-#ifdef TRAMENTO_RAMPA
+#ifdef TRATAMENTO_RAMPA
 	// Thread auxiliar: 100 ms -> 10 Hz ********************************************************************************
 	void* tickTimerThread(void *ticks_void_ptr)
 	{
