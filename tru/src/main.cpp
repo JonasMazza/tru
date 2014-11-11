@@ -14,7 +14,7 @@ int main()
     // Objetos do programa principal
     Mat src;
     Capturador imagem(N_COLUNAS, N_LINHAS);
-    Reconhecedor reconhecimento(N_COLUNAS, N_LINHAS, 8, 30, 50, 1);
+    Reconhecedor reconhecimento(N_COLUNAS, N_LINHAS, 5, 30, 50, 1);
     Controlador controle(N_COLUNAS, N_LINHAS, kp, 51200, 0, v_min, v_max);
     Pwm pwms;
     Leds leds;
