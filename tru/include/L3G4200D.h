@@ -312,6 +312,6 @@ public:
 private:
 	uint8_t devAddr;
 	uint8_t buffer[6];
-	I2Cdev* I2Cdev;
+	I2Cdev* I2Cdev_gyro;
 };
 #endif /* _L3G4200D_H_ */

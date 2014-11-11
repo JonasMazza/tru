@@ -2,8 +2,8 @@
 #define CONTROLADOR_H
 
 
-#define SERVO_MIN 930000   // Valor mínimo para controle do servo (direção)
-#define SERVO_MAX 1930000   // Valor máximo para controle do servo (direção)
+#define SERVO_MIN 850000   // Valor mínimo para controle do servo (direção)
+#define SERVO_MAX 1850000   // Valor máximo para controle do servo (direção)
 
 
 class Controlador

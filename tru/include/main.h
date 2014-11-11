@@ -17,6 +17,7 @@
 #include "trimpot.h"
 #include "I2Cdev.h"
 #include "MPU6050.h"
+#include "L3G4200D.h"
 
 using namespace std;
 using namespace cv;
