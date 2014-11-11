@@ -22,7 +22,6 @@ I2Cdev::I2Cdev(uint8_t devAddr)
     if(ioctl(fd, I2C_SLAVE, devAddr) < 0) fd = -1;
 }
 
-
 /** Read a single bit from an 8-bit device register.
  * @param regAddr Register regAddr to read from
  * @param bitNum Bit position to read (0-7)
